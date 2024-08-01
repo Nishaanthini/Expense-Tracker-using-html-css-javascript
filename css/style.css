@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+  }
+.section{
+  margin: 20px;
+  border: 1px solid;
+  padding: 10px 20px;
+}
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .h1{
+    text-align: center;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  /* .h1{
+    text-align: center;
+  } */
+  .add-expense {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .span,.span1{
+    margin-top: 15px;
+  }
+  .action-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .filter-dropdown {
+    width: 150px;
+  }

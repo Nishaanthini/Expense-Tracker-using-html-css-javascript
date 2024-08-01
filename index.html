@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="section">
+    <h1 class="h1">Expense Tracker</h1>
+
+    <div>
+      <input type="text" placeholder="Expense Name" id="expenseName">
+      <input type="number" placeholder="Amount" id="amount">
+      <select id="category">
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="date" id="date">
+      <button class="add-expense" onclick="addExpense()">Add Expense</button>
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Expense Name</th>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="expenseTable">
+        </tbody>
+    </table>
+  
+    <div class="span">
+      <span>Total: </span><span id="total">0.00</span>
+    </div>
+  
+    <div class="span1">
+      Filter by Category:
+      <select class="filter-dropdown" id="filterCategory" onchange="filterExpenses()">
+        <option value="">All</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+  </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
